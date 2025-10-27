@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat n8n – Teste</title>
+
+  <!-- Importa o CSS do widget -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Teste Chat n8n</h1>
+  <p>Se você está vendo esta página, o deploy na Vercel funcionou.</p>
+
+  <!-- Script do Chat -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    createChat({
+      webhookUrl: 'https://n8n.tecnogera.com.br/webhook/d3a2fd3b-442b-4baa-9ed3-055f3c80186d/chat' // substitua pelo seu webhook real
+    });
+  </script>
+</body>
+</html>
